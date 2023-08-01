@@ -23,10 +23,12 @@ function TaskShow({ task }) {
       <div className="card p-3">
         {showEdit ? (
           <>
+          
             <TaskCreate
               task={task}
               taskFormUpdate={true}
-              onUpdate={handleSubmit}
+              onUpdate = {handleSubmit}
+
             />
           </>
         ) : (
